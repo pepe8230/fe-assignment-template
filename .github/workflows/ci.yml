@@ -26,7 +26,7 @@ jobs:
         run: yarn test
 
       - name: Analyze test report
-        run: node analyze-report.js
+        run: node ./scripts/analyze-report.js
 
       - name: Upload summary.txt artifact
         uses: actions/upload-artifact@v4
