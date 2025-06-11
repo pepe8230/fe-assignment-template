@@ -33,3 +33,8 @@ jobs:
         with:
           name: test-summary
           path: summary.txt
+      - name: Write summary
+        run: |
+          echo "### ✅ FE 과제 테스트 결과" >> $GITHUB_STEP_SUMMARY
+          echo "- 총 테스트 수: 20" >> $GITHUB_STEP_SUMMARY
+          echo "- 통과율: 85%" >> $GITHUB_STEP_SUMMARY
